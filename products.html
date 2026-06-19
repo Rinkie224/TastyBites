@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu - TastyBites Hotdogs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+.checked {
+  color: orange;
+}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', Arial, sans-serif; color: #2d1a0e; background: #fff8f0; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap');
+    h1, h2, h3, h4 { font-family: 'Fredoka One', cursive; }
+    :root { --primary: #d4421a; --secondary: #f5a623; --card: #ffffff; --muted: #7a6455; --border: #e8ddd4; --dark: #2d1a0e; }
+    header { background: var(--dark); position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; }
+    .logo { font-family: 'Fredoka One', cursive; font-size: 1.5rem; color: var(--secondary); }
+    nav a { color: #fff; margin-left: 24px; font-weight: 600; font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: var(--secondary); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 64px 0; }
+    .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 8px; }
+    .section-subtitle { text-align: center; color: var(--muted); margin-bottom: 48px; }
+    .btn { display: inline-block; padding: 14px 36px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; transition: background 0.2s, transform 0.2s; cursor: pointer; border: none; }
+    .btn-primary { background: var(--secondary); color: var(--dark); }
+    .btn-primary:hover { background: hwb(0 26% 59%); transform: translateY(-2px); }
+    .btn-outline { background: transparent; border: 2px solid #fff; color: #fff; }
+    .btn-outline:hover { background: #fff; color: var(--primary); }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .product-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); position: relative; }
+    .product-card h3 { font-size: 1.15rem; margin-bottom: 4px; }
+    .product-card .price { font-family: 'Fredoka One', cursive; color: var(--primary); font-size: 1.3rem; margin-bottom: 8px; }
+    .product-card p { color: var(--muted); font-size: 0.9rem; }
+    .badge { position: absolute; top: 16px; right: 16px; background: var(--secondary); color: var(--dark); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; }
+    .list-item { display: flex; justify-content: space-between; background: #f3ebe3; border-radius: 8px; padding: 12px 20px; margin-bottom: 8px; }
+    .list-item span:last-child { font-family: 'Fredoka One', cursive; color: var(--primary); }
+    footer { background: var(--dark); color: #fff; padding: 48px 0 24px; margin-top: 48px; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    footer h3, footer h4 { font-family: 'Fredoka One', cursive; margin-bottom: 12px; }
+    footer p, footer li { font-size: 0.9rem; opacity: 0.8; }
+    footer hr { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 32px 0 16px; }
+    .footer-copy { text-align: center; font-size: 0.85rem; opacity: 0.5; max-width: 1200px; margin: 0 auto; }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+                <img src="Images/logo.png" alt="TastyBites Logo" style="height: 60px;" length="60px" width="100px">
+             <a href = "index.html" class="logo">TastyBites</a>
+              </div>     
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1 class="section-title">Our Menu</h1>
+        <p class="section-subtitle">All our hotdogs are made to order with premium ingredients. Prices include VAT.</p>
+
+        <h2 style="font-size:1.5rem;color:var(--primary);margin-bottom:20px;">🌭 Signature Hotdogs</h2>
+        <div class="grid-3" style="margin-bottom:64px;">
+          <article class="product-card">
+            <span class="badge">Best Seller</span>
+            <div class="menu_image">
+                    <img src="Images/hotdog-classic.jpg" alt="Classic Dog" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+                </div>
+            <h3>The Classic Snap</h3>
+            <p class="price">R45</p>
+            <p>A premium beef frankfurter served on a toasted bun with mustard,ketchup and onions,topped
+		        with lettuce and tomatoes.</p>
+          <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </article>
+          <article class="product-card">
+            <span class="badge">Popular</span>
+            <div class="menu_image">
+                    <img src="Images/bbq-hotdog.avif" alt="BBQ Blaze" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+                </div>
+            <h3>The BBQ Blaze</h3>
+            <p class="price">R62</p>
+            <p>Smoky beef sausage topped with tangy BBQ sauce, crispy onion rings, and coleslaw.</p>
+           <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </article>
+          <article class="product-card">
+            <div class="menu_image">
+                    <img src="Images/cheese-hotdog.webp" alt="Cheese Melt" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+                </div>
+            <h3>The Cheese Melt</h3>
+            <p class="price">R55</p>
+            <p>Pork sausage topped with triple melted cheddar</p>
+          <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </article>
+          <article class="product-card">
+            <span class="badge">Vegan</span>
+            <div class="menu_image">
+                    <img src="Images/Vegan-hotdog.avif" alt="Vegan Hotdog" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+                </div>
+            <h3>The Green Veggie Delight</h3>
+            <p class="price">R50</p>
+            <p>Plant-based sausage with avocado, roasted peppers,red onions, and micro greens.</p>
+          <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </article>
+          <article class="product-card">
+            <span class="badge">🔥 Hot</span>
+            <div class="menu_image">
+                    <img src="Images/spicy-hotdog.jpg" alt="Spicy Buster" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+                </div>
+            <h3>The Spicy Buster</h3>
+            <p class="price">R65</p>
+            <p>opped with pickled jalapeños, spicy mayo, and onions.</p>
+           <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </article>
+        </div>
+
+        <div class="grid-2">
+          <section>
+            <h2 style="font-size:1.5rem;color:var(--primary);margin-bottom:20px;">🍟 Sides</h2>
+            <img src="Images/fries.jpg" alt="TastyBites Sides" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+            <div class="list-item"><span>Loaded Chips</span><span>R35</span></div>
+           <img src="Images/onion-rings.jpg" alt="Onion Rings" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+            <div class="list-item"><span>Onion Rings</span><span>R30</span></div>
+            <img src="Images/coleslaw.jpg" alt="Coleslaw" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+            <div class="list-item"><span>Coleslaw</span><span>R20</span></div>
+            <img src="Images/potato-fries.webp" alt="Sweet Potato Fries" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+            <div class="list-item"><span>Sweet Potato Fries</span><span>R40</span></div>
+          </section>
+          <section>
+            <h2 style="font-size:1.5rem;color:var(--primary);margin-bottom:20px;">🥤 Drinks</h2>
+            <img src="Images/craft-lemonade.jpg" alt="TastyBites Drinks" style="width:100%;height:250px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+            <div class="list-item"><span>Craft Lemonade</span><span>R28</span></div>
+            <img src="Images/icetea.jpg" alt="Iced Tea" style="width:100%;height:250px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+            <div class="list-item"><span>Iced Tea</span><span>R25</span></div>
+            <img src="Images/milkshakev.avif" alt="Milkshakes" style="width:100;height:200px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+           <img src="Images/milkshakec.jpg" alt="Milkshakes" style="width:100;height:200px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+            <img src="Images/milkshakes.avif" alt="Milkshakes" style="width:100;height:200px;object-fit:cover;border-radius:8px;margin-bottom:16px;"> 
+          <div class="list-item"><span>Milkshake (Vanilla / Choc / Strawberry)</span><span>R38</span></div>
+          <img src="Images/coldrink.jpg" alt="Soft Drinks" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+          <div class="list-item"><span>Soft Drinks</span><span>R22</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div><h3>🌭 TastyBites</h3><p>Serving the finest gourmet hotdogs. Made with love, served with a smile.</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Opening Hours</h4><ul><li>Mon – Fri: 9:00 AM – 6:00 PM</li><li>Saturday: 10:00 AM – 3:00 PM</li><li>Sunday: Closed</li></ul></div>
+    </div>
+    <hr><p class="footer-copy">&copy; 2026 TastyBites Hotdogs. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/extras.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyBites Hotdogs - Home</title>
+  <meta name="description" content="TastyBites serves gourmet hotdogs crafted with premium ingredients in Johannesburg.">
+   <style>
+
+    /* ===== RESET & BASE ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', Arial, sans-serif; color: #2d1a0e; background: #fff8f0; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+
+    /* ===== FONTS (Google Fonts fallback) ===== */
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap');
+    h1, h2, h3, h4 { font-family: 'Fredoka One', cursive; }
+
+    /* ===== COLOURS ===== */
+    :root {
+      --primary: #d4421a;
+      --primary-light: #ff6b3d;
+      --secondary: #f5a623;
+      --bg: #fff8f0;
+      --card: #ffffff;
+      --text: #2d1a0e;
+      --muted: #7a6455;
+      --border: #e8ddd4;
+      --dark: #2d1a0e;
+    }
+
+    /* ===== HEADER ===== */
+    header { background: var(--dark); padding: 0; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; }
+    .logo { font-family: 'Fredoka One', cursive; font-size: 1.5rem; color: var(--secondary); }
+    nav a { color: #fff; margin-left: 24px; font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: var(--secondary); }
+
+    /* ===== HERO ===== */
+    .hero { position: relative; background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: #fff; text-align: center;}
+    .hero h1 { font-size: 3.2rem; margin-bottom: 16px; }
+    .hero p { font-size: 1.25rem; max-width: 600px; margin: 0 auto 32px; opacity: 0.9; }
+    .btn { display: inline-block; padding: 14px 36px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; transition: background 0.2s, transform 0.2s; cursor: pointer; border: none; }
+    .btn-primary { background: var(--secondary); color: var(--dark); }
+    .btn-primary:hover { background: #e69500; transform: translateY(-2px); }
+    .btn-outline { background: transparent; border: 2px solid #fff; color: #fff; }
+    .btn-outline:hover { background: #fff; color: var(--primary); }
+     .centered {position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%);}
+    /* ===== SECTIONS ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 64px 0; }
+    .section-title { text-align: center; font-size: 2rem; margin-bottom: 12px; }
+    .section-subtitle { text-align: center; color: var(--muted); margin-bottom: 48px; max-width: 700px; margin-left: auto; margin-right: auto; }
+    .bg-muted { background: #f3ebe3; }
+
+    /* ===== CARDS GRID ===== */
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .card .icon { font-size: 3rem; margin-bottom: 16px; }
+    .card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+
+    /* ===== CTA ===== */
+    .cta { text-align: center; padding: 64px 20px; }
+    .cta h2 { font-size: 2rem; margin-bottom: 12px; }
+    .cta p { color: var(--muted); margin-bottom: 28px; }
+    .cta .btn { margin: 0 8px; }
+
+    /* ===== FOOTER ===== */
+    footer { background: var(--dark); color: #fff; padding: 48px 0 24px; margin-top: 48px; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    footer h3, footer h4 { font-family: 'Fredoka One', cursive; margin-bottom: 12px; }
+    footer p, footer li { font-size: 0.9rem; opacity: 0.8; }
+    footer a:hover { opacity: 1; }
+    footer hr { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 32px 0 16px; }
+    .footer-copy { text-align: center; font-size: 0.85rem; opacity: 0.5; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+    
+     <div class="logo">
+     <a href = "index.html" class="logo">TastyBites</a>
+                <img src="Images/logo.png" alt="TastyBites Logo" style="height: 60px;" length="60px" width="100px">
+            </div>
+     <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+    <img src="Images/Hero_image.jpg" alt="Delicious TastyBites Hotdog" style="width:100%;height:auto;object-fit:cover;opacity:0.8;">
+      <div class="centered">
+        <h1>TastyBites Hotdogs</h1>
+        <p>Gourmet hotdogs crafted with premium ingredients and served with passion</p>
+        <a href="products.html" class="btn btn-primary">View Our Menu</a>
+      </div>
+    </section>
+
+    <!-- ===== WELCOME ===== -->
+    <section>
+      <div class="container" style="text-align:center;">
+        <h2 class="section-title">Welcome to TastyBites!</h2>
+        <p class="section-subtitle">
+          At TastyBites, we believe the humble hotdog deserves a gourmet makeover. Using only the freshest ingredients, premium sausages, and artisan buns baked daily, we create hotdog experiences that will leave you craving more.
+         Whether you're a classic mustard lover or an adventurous foodie, we've got something special for you
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="bg-muted">
+      <div class="container">
+        <h2 class="section-title">Why Choose TastyBites?</h2>
+        <div class="grid-3">
+          <article class="card">
+            <span class="icon">🥩</span>
+            <h3>Premium Quality</h3>
+            <p>100% beef franks sourced from local farms, free of artificial preservatives.</p>
+          </article>
+          <article class="card">
+            <span class="icon">🍞</span>
+            <h3>Fresh Buns Daily</h3>
+            <p>Our artisan buns are baked every morning for the perfect soft yet sturdy base.</p>
+          </article>
+          <article class="card">
+            <span class="icon">🌶️</span>
+            <h3>Bold Flavours</h3>
+            <p>From tangy sauerkraut to smoky chipotle, our toppings bring the heat and the heart.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+      <h2>Hungry Yet?</h2>
+      <p>Visit us today or place an enquiry for catering your next event!</p>
+      <a href="enquiry.html" class="btn btn-primary">Make an Enquiry</a>
+      <a href="contact.html" class="btn btn-outline" style="border-color:var(--primary);color:var(--primary);">Find Us</a>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>🌭 TastyBites</h3>
+        <p>Serving the finest gourmet hotdogs. Made with love, served with a smile.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Opening Hours</h4>
+        <ul>
+          <li>Mon – Fri: 9:00 AM – 6:00 PM</li>
+          <li>Saturday: 10:00 AM – 3:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="footer-copy">&copy; 2026 TastyBites Hotdogs. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/extras.js"></script>
+</body>
+</html>
